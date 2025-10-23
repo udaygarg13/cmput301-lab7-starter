@@ -59,12 +59,6 @@ public class ShowActivityTest {
 
         onView(withId(R.id.button_back)).check(matches((isDisplayed())));
         onView(withId(R.id.button_back)).perform(click());
-        onView(withId(R.id.button_back)).check(matches((isDisplayed())));
-
-        try {
-            Thread.sleep(4700);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        onView(withId(R.id.button_add)).check(matches((isDisplayed())));
     }
 }
